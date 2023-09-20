@@ -1,9 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/wait.h>
 #include "the_shell-header.h"
+/*
+ * File: the_shell.c
+ * Description: A simple shell program that reads and executes user-entered commands.
+ *              It uses fork() to create child processes for command execution.
+ */
 
 void execute_command(char *command)
 {
