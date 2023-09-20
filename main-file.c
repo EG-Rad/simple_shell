@@ -10,7 +10,7 @@ int main(void)
 
 	while (1)
 	{
-		printf("#ourFirstShell$ ");
+		printf("#cisfun$ ");
 		fflush(stdout);
 
 		if (fgets(command, sizeof(command), stdin) == NULL)
