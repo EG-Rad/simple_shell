@@ -1,10 +1,4 @@
-#include "the_shell-header.h"
-
-/*
- * File: main-file.c
- * Description: A simple shell program that reads and executes user-entered commands.
- *              It uses fork() to create child processes for command execution.
- */
+#include "the_shell_header.h"
 
 #define MAX_COMMAND_LENGTH 256
 

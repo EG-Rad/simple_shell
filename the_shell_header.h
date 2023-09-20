@@ -1,5 +1,5 @@
-#ifndef SHELL_H
-#define SHELL_H
+#ifndef THE_SHELL_HEADER_H
+#define THE_SHELL_HEADER_H
 
 void execute_command(char *command);
 #include <stdio.h>
