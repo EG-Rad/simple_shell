@@ -8,11 +8,8 @@ This is a simple shell project developed as part of a coding exercise. The proje
 
 ## Project Structure
 
-The project is organized into several files and directories:
+The project is organized into four files:
 
 - `main.c`: Contains the main entry point of the shell program, which determines whether to run in interactive mode or execute commands from a file.
-- `utils.c` and `utils.h`: Provide utility functions for reading input and tokenizing commands.
-- `aliases.c` and `aliases.h`: Handle alias-related functionality.
-- `commands.c` and `commands.h`: Implement command execution logic, including handling multiple commands, logical operators, and exit built-in.
-- `variables.c` and `variables.h`: Manage shell variables and replace special variables like `$$` and `$?`.
-- `shell.h`: Header file containing function prototypes and includes.
+- `AUTHORS`: Where the list of the individuals who worked in the project are located.
+- `shell.c` and `shell.h`: Header file containing function prototypes.
