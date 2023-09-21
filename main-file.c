@@ -4,24 +4,28 @@
 
 int main(void)
 {
-	char command[MAX_COMMAND_LENGTH];
+    char command[MAX_COMMAND_LENGTH];
 
-	while (1)
-	{
-		printf("#cisfun$ ");
-		fflush(stdout);
+    while (1)
+    {
+        printf("#cisfun$ ");
+        fflush(stdout);
 
-		if (fgets(command, sizeof(command), stdin) == NULL)
-		{
-			printf("\nThank you for your time, Bye!\n");
-			break;
-		}
+        if (fgets(command, sizeof(command), stdin) == NULL)
+        {
+            printf("\nThank you for your time, Bye!\n");
+            break;
+        }
 
-		command[strcspn(command, "\n")] = '\0';
+        command[strcspn(command, "\n")] = '\0';
 
-		execute_command(command);
-	}
+        if (is_single_word(command)) {
+            execute_command(command);
+        } else {
+            printf("Invalid command. Please enter a single-word command.\n");
+        }
+    }
 
-	return (0);
+    return 0;
 }
 
